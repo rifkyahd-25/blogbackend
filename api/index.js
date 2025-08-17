@@ -17,9 +17,12 @@ const __dirname = path.resolve();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Or replace with: 'https://styledmaven.vercel.app'
+  origin: [
+    "http://localhost:5173",                  // React local dev
+    "https://frontend-two-sigma-17.vercel.app"        // your deployed frontend
+  ],
   credentials: true
-})); // Enable CORS for all origins
+}));
 app.use(express.json({ limit: "50mb" }));
 app.use(cookieParser());
 
