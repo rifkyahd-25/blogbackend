@@ -19,7 +19,7 @@ const __dirname = path.resolve();
 app.use(cors({
   origin: [
     "http://localhost:5173",                  // React local dev
-    "https://frontend-two-sigma-17.vercel.app"        // your deployed frontend
+    "https://rrrblog.vercel.app"        // your deployed frontend
   ],
   credentials: true
 }));
